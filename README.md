@@ -21,29 +21,29 @@ Tots Blog App is a platform designed to empower users to share their thoughts, s
 Follow these steps to get the Tots Blog App Backend up and running on your local machine:
 
 1. **Clone the Repository:**
-   ```
-   git clone https://github.com/your-username/tots-blog-app-backend.git
+    ```
+  git clone https://github.com/RanaMuhammed/tots-blog-app-backend.git
    ```
 
-2. **Navigate to the Project Directory:**
+3. **Navigate to the Project Directory:**
    ```
    cd tots-blog-app-backend
    ```
 
-3. **Install Dependencies:**
+4. **Install Dependencies:**
    ```
    dotnet restore
    ```
 
-4. **Configure the Database:**
+5. **Configure the Database:**
    Update the database connection string in `appsettings.json` to point to your local database instance.
 
-5. **Run Migrations:**
+6. **Run Migrations:**
    ```
    dotnet ef database update
    ```
 
-6. **Run the Application:**
+7. **Run the Application:**
    ```
    dotnet run
    ```
