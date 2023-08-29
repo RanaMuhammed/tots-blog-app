@@ -22,28 +22,28 @@ Follow these steps to get the Tots Blog App Backend up and running on your local
 
 1. **Clone the Repository:**
     ```
-  git clone https://github.com/RanaMuhammed/tots-blog-app-backend.git
+      git clone https://github.com/RanaMuhammed/tots-blog-app-backend.git
    ```
 
-3. **Navigate to the Project Directory:**
+2. **Navigate to the Project Directory:**
    ```
    cd tots-blog-app-backend
    ```
 
-4. **Install Dependencies:**
+3. **Install Dependencies:**
    ```
    dotnet restore
    ```
 
-5. **Configure the Database:**
+4. **Configure the Database:**
    Update the database connection string in `appsettings.json` to point to your local database instance.
 
-6. **Run Migrations:**
+5. **Run Migrations:**
    ```
    dotnet ef database update
    ```
 
-7. **Run the Application:**
+6. **Run the Application:**
    ```
    dotnet run
    ```
@@ -55,12 +55,40 @@ The application should now be running on `http://localhost:5000`.
 
 If you encounter any issues, have suggestions, or need assistance, please create an issue in the repository. We encourage open communication and appreciate your feedback.
 
----------- Packages to install from the package Manager ----------
-1. Microsoft.EntityFrameworkCore
-2. Microsoft.EntityFrameworkCore.SqlServer
-3. Microsoft.EntityFrameworkCore.Tools
-4. Microsoft.AspNetCore.Authentication.JwtBearer
-5. Microsoft.AspNetCore.Identity.EntityFrameworkCore
-6. Microsoft.EntityFrameworkCore.Design
-8. Microsoft.VisualStudio.Web.CodeGeneration.Design
-9. System.IdentityModel.Tokens.Jwt
+## Packages to Install
+
+Before getting started, make sure to install the following packages using a package manager, such as NuGet or the .NET CLI:
+
+1. **Microsoft.EntityFrameworkCore**
+2. **Microsoft.EntityFrameworkCore.SqlServer**
+3. **Microsoft.EntityFrameworkCore.Tools**
+4. **Microsoft.AspNetCore.Authentication.JwtBearer**
+5. **Microsoft.AspNetCore.Identity.EntityFrameworkCore**
+6. **Microsoft.EntityFrameworkCore.Design**
+7. **Microsoft.VisualStudio.Web.CodeGeneration.Design**
+8. **System.IdentityModel.Tokens.Jwt**
+
+You can install these packages using the following commands:
+
+```bash
+# Using NuGet Package Manager Console
+Install-Package Microsoft.EntityFrameworkCore
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
+Install-Package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Install-Package Microsoft.EntityFrameworkCore.Design
+Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
+Install-Package System.IdentityModel.Tokens.Jwt
+bash
+Copy code
+# Using .NET CLI
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package System.IdentityModel.Tokens.Jwt
+These packages are essential for building the backend of the Tots Blog App, enabling functionalities like Entity Framework, JWT-based authentication, and more.
